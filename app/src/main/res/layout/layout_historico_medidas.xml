@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/LinearLayout01"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Peso: "
+        android:id="@+id/lblPesoHistorico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/txtPesoLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Altura: "
+        android:id="@+id/lblAlturaHistorico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblPesoHistorico"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Circunferência:"
+        android:id="@+id/lblCircunferenciaHistorico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblAlturaHistorico"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dias"
+        android:id="@+id/lblDiasHistorico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblCircunferenciaHistorico"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Data da Medida:"
+        android:id="@+id/lblDataMedidaHistorico"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblDiasHistorico"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="peso"
+        android:id="@+id/txtPesoLista"
+        android:textColor="#000000"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lblDataMedidaHistorico"
+        android:layout_toEndOf="@+id/lblDataMedidaHistorico" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="altura"
+        android:id="@+id/txtAlturaLista"
+        android:textColor="#000000"
+        android:layout_above="@+id/lblCircunferenciaHistorico"
+        android:layout_alignLeft="@+id/txtPesoLista"
+        android:layout_alignStart="@+id/txtPesoLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="circunferencia"
+        android:textColor="#000000"
+        android:id="@+id/txtCircunferenciaLista"
+        android:layout_below="@+id/txtAlturaLista"
+        android:layout_alignLeft="@+id/txtAlturaLista"
+        android:layout_alignStart="@+id/txtAlturaLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="dias"
+        android:id="@+id/txtDiasLista"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/lblDiasHistorico"
+        android:layout_alignLeft="@+id/txtCircunferenciaLista"
+        android:layout_alignStart="@+id/txtCircunferenciaLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="data medida"
+        android:id="@+id/txtDataMedidaLista"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtDiasLista"
+        android:layout_alignLeft="@+id/txtDiasLista"
+        android:layout_alignStart="@+id/txtDiasLista"
+        android:textSize="15dp" />
+</RelativeLayout>

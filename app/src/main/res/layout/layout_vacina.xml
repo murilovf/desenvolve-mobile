@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/LinearLayout01"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Código: "
+        android:id="@+id/lblCodigoVacinaLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/txtCodigoVacinaLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="codigo"
+        android:id="@+id/txtCodigoVacinaLista"
+        android:textColor="#000000"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lblDataVacinaLista"
+        android:layout_toEndOf="@+id/lblDataVacinaLista" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bovino: "
+        android:id="@+id/lblBovinoLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblCodigoVacinaLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vacina: "
+        android:id="@+id/lblVacinaLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblBovinoLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Data da Vacina:"
+        android:id="@+id/lblDataVacinaLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblVacinaLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Data da Aplicação:"
+        android:id="@+id/lblDataAplicacaoLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblDataVacinaLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="bovino"
+        android:id="@+id/txtBovinoLista"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_above="@+id/txtVacinaLista"
+        android:layout_alignLeft="@+id/txtCodigoVacinaLista"
+        android:layout_alignStart="@+id/txtCodigoVacinaLista" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="vacina"
+        android:id="@+id/txtVacinaLista"
+        android:textColor="#000000"
+        android:layout_above="@+id/lblDataVacinaLista"
+        android:layout_alignLeft="@+id/txtBovinoLista"
+        android:layout_alignStart="@+id/txtBovinoLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="data vacina"
+        android:textColor="#000000"
+        android:id="@+id/txtDataVacinaLista"
+        android:layout_below="@+id/txtVacinaLista"
+        android:layout_alignLeft="@+id/txtVacinaLista"
+        android:layout_alignStart="@+id/txtVacinaLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="situacao"
+        android:id="@+id/txtSituacaoLista"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/lblSituacaoLista"
+        android:layout_alignLeft="@+id/txtDataVacinaLista"
+        android:layout_alignStart="@+id/txtDataVacinaLista"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Situação:"
+        android:id="@+id/lblSituacaoLista"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/lblDataAplicacaoLista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="data aplicacao"
+        android:id="@+id/txtDataAplicacaoLista"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/lblDataAplicacaoLista"
+        android:layout_alignLeft="@+id/txtSituacaoLista"
+        android:layout_alignStart="@+id/txtSituacaoLista"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

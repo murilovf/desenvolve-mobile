@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnFichaBovino"
+        android:background="@drawable/ficha_bovino"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnCadastroMedidas"
+        android:layout_below="@+id/btnFichaBovino"
+        android:layout_alignLeft="@+id/btnFichaBovino"
+        android:layout_alignStart="@+id/btnFichaBovino"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/cadastro_medidas" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnVacinas"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/vacinas"
+        android:layout_below="@+id/btnCadastroMedidas"
+        android:layout_alignLeft="@+id/btnCadastroMedidas"
+        android:layout_alignStart="@+id/btnCadastroMedidas" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnSair"
+        android:layout_below="@+id/btnVacinas"
+        android:layout_alignLeft="@+id/btnVacinas"
+        android:layout_alignStart="@+id/btnVacinas"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/sair" />
+</RelativeLayout>

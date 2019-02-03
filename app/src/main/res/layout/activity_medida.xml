@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".activity.MedidaActivity">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFiltroBovinoMedida"
+            android:theme="@style/MyEditTextTheme"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:hint="Identificação do Bovino"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/btnBuscarBovinoMedida"
+            android:width="150dp"
+            android:height="55dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtFiltroBovinoMedida"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identificar por QRCode"
+            android:id="@+id/btnQrcodeMedida"
+            android:width="180dp"
+            android:gravity="center"
+            android:height="55dp"
+            android:layout_alignBottom="@+id/btnBuscarBovinoMedida"
+            android:layout_alignRight="@+id/btnBuscarBovinoMedida"
+            android:layout_alignEnd="@+id/txtFiltroBovinoMedida" />
+
+        <View
+            android:background="#e2e1e1"
+            android:id="@+id/viewMedida1"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/btnBuscarBovinoMedida"
+            android:layout_marginTop="30dp"
+            android:layout_height="5dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/lblBovinoSelecionado"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/viewMedida1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <View
+            android:background="#e2e1e1"
+            android:id="@+id/viewMedida2"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/lblBovinoSelecionado"
+            android:layout_marginTop="2dp"
+            android:layout_height="5dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Peso:"
+            android:id="@+id/lblPeso"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/viewMedida2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txtPeso"
+            android:editable="false"
+            android:theme="@style/MyEditTextTheme"
+            android:layout_below="@+id/lblPeso"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/viewMedida2"
+            android:layout_alignEnd="@+id/viewMedida2"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Altura:"
+            android:id="@+id/lblAltura"
+            android:layout_below="@+id/txtPeso"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txtAltura"
+            android:editable="false"
+            android:theme="@style/MyEditTextTheme"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblAltura"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/txtPeso"
+            android:layout_alignEnd="@+id/txtPeso"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Circunferência Torácica:"
+            android:id="@+id/lblCircunferencia"
+            android:layout_below="@+id/txtAltura"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txtCircunferencia"
+            android:editable="false"
+            android:theme="@style/MyEditTextTheme"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblCircunferencia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/txtAltura"
+            android:layout_alignEnd="@+id/txtAltura"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar Medidas"
+            android:id="@+id/btnAtualizarMedidas"
+            android:enabled="false"
+            android:layout_below="@+id/txtCircunferencia"
+            android:layout_marginTop="40dp"
+            android:layout_alignRight="@+id/txtCircunferencia"
+            android:layout_alignEnd="@+id/txtCircunferencia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Histórico de Medidas"
+            android:id="@+id/btnHistoricoMedidas"
+            android:enabled="false"
+            android:layout_below="@+id/btnAtualizarMedidas"
+            android:layout_alignRight="@+id/btnAtualizarMedidas"
+            android:layout_alignEnd="@+id/btnAtualizarMedidas"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+</ScrollView>
